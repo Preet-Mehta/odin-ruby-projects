@@ -13,7 +13,7 @@ def shift_character(char, shift)
     if is_alphabet?(char)
         # If an alphabet, then shift.
         if is_lower?(char)
-            new_char_ = ((char.ord + shift) - LOWER_CASE_START) % 26
+            new_char = ((char.ord + shift) - LOWER_CASE_START) % 26
             (new_char + LOWER_CASE_START).chr
         else
             new_char = ((char.ord + shift) - UPPER_CASE_START) % 26
